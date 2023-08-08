@@ -1,15 +1,15 @@
 package model;
 
-public abstract class Calculator<Value> {
+public interface Calculator<T> {
 
-    public abstract  Value summary(Value firstvalue, Value secondValue);
+    T summary(T firstvalue, T secondValue);
 
-    public abstract Value multiply(Value firstvalue, Value secondValue);
+    T multiply(T firstvalue, T secondValue);
 
-    public abstract Value division(Value firstvalue, Value secondValue);
+    T division(T firstvalue, T secondValue);
 
-    public abstract Value subtraction(Value firstvalue, Value secondValue);
+    T subtraction(T firstvalue, T secondValue);
 
-    public abstract Value exponentiation(Value firstvalue, Value secondValue);
+    T exponentiation(T firstvalue, T secondValue);
 
 }

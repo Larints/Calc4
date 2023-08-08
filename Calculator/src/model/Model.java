@@ -11,40 +11,42 @@ public class Model {
         complexcalculator = new ComplexCalculator();
     }
 
-    public Value summary (Value firstvalue, Value secondvalue) {
-        return calculator.summary(firstvalue, secondvalue);
+    public Value summary(Double firstvalue, Double secondvalue) {
+        return calculator.summary(new Value(firstvalue), new Value(secondvalue));
     }
 
-    public Value subtraction (Value firstvalue, Value secondvalue) {
-        return calculator.subtraction(firstvalue, secondvalue);
+    public Value subtraction(Double firstvalue, Double secondvalue) {
+        return calculator.subtraction(new Value(firstvalue), new Value(secondvalue));
     }
 
-    public Value multiply (Value firstvalue, Value secondvalue) {
-        return calculator.multiply(firstvalue, secondvalue);
+    public Value multiply(Double firstvalue, Double secondvalue) {
+        return calculator.multiply(new Value(firstvalue), new Value(secondvalue));
     }
 
-    public Value division (Value firstvalue, Value secondvalue) {
-        return calculator.division(firstvalue, secondvalue);
+    public Value division(Double firstvalue, Double secondvalue) {
+        if (secondvalue != 0) {
+            return calculator.division(new Value(firstvalue), new Value(secondvalue));
+        } else throw new ArithmeticException("Деление на 0 недопустимо!");
     }
 
-    public Value exponent (Value firstvalue, Value secondvalue) {
-        return calculator.exponentiation(firstvalue, secondvalue);
+    public Value exponent(Double firstvalue, Double secondvalue) {
+        return calculator.exponentiation(new Value(firstvalue), new Value(secondvalue));
     }
 
-    public ComplexValue summary (ComplexValue firstvalue, ComplexValue secondvalue) {
-        return complexcalculator.summary(firstvalue, secondvalue);
+    public ComplexValue summary(Double var1r, Double var1i, Double var2r, Double var2i) {
+        return complexcalculator.summary(new ComplexValue(var1r, var1i), new ComplexValue(var2r, var2i));
     }
 
-    public ComplexValue subtraction (ComplexValue firstvalue, ComplexValue secondvalue) {
-        return complexcalculator.subtraction(firstvalue, secondvalue);
+    public ComplexValue subtraction(Double var1r, Double var1i, Double var2r, Double var2i) {
+        return complexcalculator.subtraction(new ComplexValue(var1r, var1i), new ComplexValue(var2r, var2i));
     }
 
-    public ComplexValue multiply (ComplexValue firstvalue, ComplexValue secondvalue) {
-        return complexcalculator.multiply(firstvalue, secondvalue);
+    public ComplexValue multiply(Double var1r, Double var1i, Double var2r, Double var2i) {
+        return complexcalculator.multiply(new ComplexValue(var1r, var1i), new ComplexValue(var2r, var2i));
     }
 
-    public ComplexValue division (ComplexValue firstvalue, ComplexValue secondvalue) {
-        return complexcalculator.division(firstvalue, secondvalue);
+    public ComplexValue division(Double var1r, Double var1i, Double var2r, Double var2i) {
+        return complexcalculator.division(new ComplexValue(var1r, var1i), new ComplexValue(var2r, var2i));
     }
 
 }

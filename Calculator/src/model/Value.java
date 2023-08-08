@@ -1,21 +1,18 @@
 package model;
 
-public class Value<T extends Number> {
+public class Value {
 
-    private T value;
+    private double value;
 
-    public Value(T value) {
+    public Value(double value) {
         this.value = value;
     }
 
-    protected Value() {
-    }
-
-    public T getValue() {
+    public double getValue() {
         return value;
     }
 
-    public void setValue(T value) {
+    public void setValue(double value) {
         this.value = value;
     }
 

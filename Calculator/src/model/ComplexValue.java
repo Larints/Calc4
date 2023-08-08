@@ -26,4 +26,14 @@ public class ComplexValue {
     public void setImaginaryPart(double imaginaryPart) {
         this.imaginaryPart = imaginaryPart;
     }
+
+    @Override
+    public String toString() {
+        if (imaginaryPart >= 0) {
+            return realPart + " + " + imaginaryPart + "i";
+        } else {
+            return realPart + " - " + (-imaginaryPart) + "i";
+        }
+
+    }
 }

@@ -2,7 +2,21 @@ package Viewer;
 
 public interface UserGUI {
 
-    void inputFirstValue();
-    void inputSecondValue();
+    Double inputFirstValue();
+    Double inputSecondValue();
+
+    void simpleCalculatorMenu();
+
+    void complexCalculatorMenu();
+
+    void selectionButton();
+
+    Double inputRealPartFirstValue ();
+
+    Double inputImaginaryPartFirstValue ();
+
+    Double inputRealPartSecondValue ();
+
+    Double inputImaginaryPartSecondValue ();
 
 }

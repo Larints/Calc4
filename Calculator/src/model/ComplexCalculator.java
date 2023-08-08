@@ -1,14 +1,14 @@
 package model;
 
-public class ComplexCalculator extends Calculator<ComplexValue> {
+public class ComplexCalculator implements Calculator<ComplexValue> {
 
 
-    @Override
     public ComplexValue summary(ComplexValue firstvalue, ComplexValue secondvalue) {
         double newRealPart = firstvalue.getRealPart() + secondvalue.getRealPart();
         double newImaginaryPart = firstvalue.getImaginaryPart() + secondvalue.getImaginaryPart();
         return new ComplexValue(newRealPart, newImaginaryPart);
     }
+
 
     @Override
     public ComplexValue subtraction(ComplexValue firstvalue, ComplexValue secondvalue) {
@@ -43,4 +43,5 @@ public class ComplexCalculator extends Calculator<ComplexValue> {
     public ComplexValue exponentiation(ComplexValue firstvalue, ComplexValue secondValue) {
         return null;
     }
+
 }
