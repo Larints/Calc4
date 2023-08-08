@@ -1,5 +1,9 @@
 package model;
 
+/**
+ * @apiNote Класс для работы с калькулятором, позволяющий работать с комплексными значениями.
+ * @apiNote Класс реализует методы для работы с числами, такие как сумма, вычитание, умножение и деление.
+ */
 public class ComplexCalculator implements Calculator<ComplexValue> {
 
 

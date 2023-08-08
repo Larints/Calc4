@@ -1,5 +1,9 @@
 package model;
 
+/**
+ * @apiNote Базовый интерфейс для работы с калькулятором.
+ * @param <T> - Параметр типа.
+ */
 public interface Calculator<T> {
 
     T summary(T firstvalue, T secondValue);

@@ -5,6 +5,9 @@ import presenter.Presenter;
 
 import java.util.Scanner;
 
+/**
+ * @apiNote Класс ConsoleView отвечающий за вывод в консоль.
+ */
 public class ConsoleView implements UserGUI {
 
     private Menu menu;

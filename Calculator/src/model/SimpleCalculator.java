@@ -1,5 +1,10 @@
 package model;
 
+/**
+ * @apiNote Класс простой калькулятор который позволяет работать с вещественными числами.
+ * Содержит методы для работы с вещественными значениями.
+ */
+
 public class SimpleCalculator implements Calculator<Value> {
 
     @Override

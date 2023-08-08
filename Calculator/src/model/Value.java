@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * @apiNote - Класс для хранения значений типа Value
+ */
 public class Value {
 
     private double value;

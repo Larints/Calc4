@@ -4,6 +4,9 @@ import model.ComplexValue;
 import model.Model;
 import model.Value;
 
+/**
+ * @apiNote Класс Presenter реализует взаимодействие с моделью.
+ */
 public class Presenter {
 
     Model model;

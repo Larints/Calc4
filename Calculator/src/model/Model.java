@@ -1,5 +1,10 @@
 package model;
 
+/**
+ * @apiNote Класс отвечающий за бизнес логику приложения.
+ * Тут содержаться методы, отвечающие за каждый из классов, реализующих интерфейс
+ * SimpleCalculator, ComplexCalculator и реализующие их для каждого из этих классов.
+ */
 public class Model {
 
     private SimpleCalculator calculator;

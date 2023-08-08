@@ -2,6 +2,9 @@ package Viewer;
 
 import java.util.Scanner;
 
+/**
+ * @apiNote - Класс меню, представляющий собой вывод информации о действии с пользователем.
+ */
 public class Menu {
 
     private String menu;

@@ -1,5 +1,10 @@
 package model;
 
+/**
+ * @apiNote Класс описывающий комплексное число.
+ * realPart - вещественная часть.
+ * imaginaryPart - мнимая часть.
+ */
 public class ComplexValue {
 
     private double realPart; // Вещественная часть

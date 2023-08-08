@@ -1,5 +1,8 @@
 package Viewer;
 
+/**
+ * @apiNote Interface for the user to interact with the GUI
+ */
 public interface UserGUI {
 
     Double inputFirstValue();
